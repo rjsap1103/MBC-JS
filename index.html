@@ -1,0 +1,40 @@
+HTML
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>감성 디지털 시계</title>
+    <!-- 디자인 설정을 불러옵니다 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 제목 부분 -->
+    <h2>Digital Clock</h2>
+
+    <!-- 시계 숫자들이 들어갈 큰 상자 -->
+    <div class="clock">
+      <!-- '시' 상자 -->
+      <div>
+        <span id="hour">00</span>
+        <span class="text">Hours</span>
+      </div>
+      <!-- '분' 상자 -->
+      <div>
+        <span id="minutes">00</span>
+        <span class="text">Minutes</span>
+      </div>
+      <!-- '초' 상자 -->
+      <div>
+        <span id="seconds">00</span>
+        <span class="text">Seconds</span>
+      </div>
+      <!-- '오전/오후' 상자 -->
+      <div>
+        <span id="ampm">AM</span>
+      </div>
+    </div>
+
+    <!-- 시계를 움직이게 할 두뇌를 불러옵니다 -->
+    <script src="index.js"></script>
+  </body>
+</html>
