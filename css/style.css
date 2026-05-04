@@ -1,0 +1,35 @@
+/* 1. 배경과 전체 화면 설정 */
+body {
+  margin: 0;
+  display: flex; /* 요소들을 자유롭게 배치합니다 */
+  flex-direction: column; /* 위아래로 쌓습니다 */
+  align-items: center; /* 가로 중앙 정렬 */
+  justify-content: center; /* 세로 중앙 정렬 */
+  height: 100vh; /* 화면 높이를 꽉 채웁니다 */
+  background: url('bg.png') no-repeat center center fixed; /* 배경 이미지 설정 */
+  background-size: cover; /* 이미지가 화면에 꽉 차게 조절 */
+  color: white; /* 기본 글자색은 흰색 */
+  font-family: 'Inter', sans-serif;
+}
+
+/* 2. 시계 박스 디자인 (유리 효과) */
+.clock span {
+  width: 120px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.05); /* 아주 투명한 흰색 배경 */
+  backdrop-filter: blur(15px); /* 배경을 흐리게 해서 유리처럼 만듦 */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* 얇은 테두리 */
+  border-radius: 16px; /* 모서리를 둥글게 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem; /* 숫자 크기를 크게 */
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* 은은한 그림자 */
+}
+
+/* 3. 마우스를 올렸을 때의 반응 */
+.clock span:hover {
+  background: rgba(255, 255, 255, 0.1); /* 좀 더 밝아짐 */
+  transform: translateY(-5px); /* 위로 살짝 떠오름 */
+}
